@@ -1,5 +1,5 @@
 # Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain
-# Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain
+
 # CSV Data Query with LLM
 
 This project provides a Streamlit web application that allows users to upload CSV files, generate MongoDB queries using LLM (Language Learning Model), and save query results. The application uses Google's Gemini API for query generation and MongoDB for data storage.
