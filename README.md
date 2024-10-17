@@ -74,6 +74,14 @@ CSV_CHUNK_SIZE=1000
 
 ## Running the Application
 
+## Demo
+
+Here's a quick demonstration of how the application works:
+
+![How to Run](how_to_run.gif)
+
+*The GIF above shows the basic workflow of uploading a CSV file, entering a query, and viewing results.*
+
 You can run the application in two ways:
 
 ### 1. Using Streamlit (Web Interface)
