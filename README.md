@@ -157,7 +157,5 @@ This will run the application in command-line mode, which is useful for testing 
    - Check your internet connection
    - Ensure you have sufficient API credits
 
-## Contributing
 
-Feel free to submit issues, fork the repository, and create pull requests for any improvements.
 
