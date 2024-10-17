@@ -1,0 +1,19 @@
+# Database
+pymongo
+pandas
+# LLM and Vector Stores
+google-generativeai
+langchain
+langchain-google-genai
+llama-index
+streamlit
+# Environment and Utils
+python-dotenv
+python-dateutil
+
+# Data Processing
+numpy
+
+# Optional - for better console output
+tabulate
+rich
