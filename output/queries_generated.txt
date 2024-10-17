@@ -103,3 +103,21 @@ Generated Query: {'$and': [{'Category': 'Electronics'}, {'Price': {'$lt': 500}},
 User Input: find all the products in electronic catagory whose price is less than 500 and rating is 4 or higher than that
 Generated Query: {'$and': [{'Category': 'Electronics'}, {'Price': {'$lt': 500}}, {'Rating': {'$gte': 4}}]}
 
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$and': [{'Rating': {'$lt': 4.5}}, {'ReviewCount': {'$gt': 200}}, {'$or': [{'Brand': 'Nike'}, {'Brand': 'Sony'}]}]}
+
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$and': [{'Rating': {'$lt': 4.5}}, {'ReviewCount': {'$gt': 200}}, {'$or': [{'Brand': 'Nike'}, {'Brand': 'Sony'}]}]}
+
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$match': {'$and': [{'Rating': {'$lt': 4.5}}, {'ReviewCount': {'$gt': 200}}, {'$or': [{'Brand': 'Nike'}, {'Brand': 'Sony'}]}]}}
+
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$and': [{'Rating': {'$lt': 4.5}}, {'ReviewCount': {'$gt': 200}}, {'$or': [{'Brand': 'Nike'}, {'Brand': 'Sony'}]}]}
+
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$and': [{'Rating': {'$lt': 4.5}}, {'$or': [{'Brand': 'Nike'}, {'Brand': 'Sony'}]}, {'ReviewCount': {'$gt': 200}}]}
+
+User Input: Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 'Sony'.
+Generated Query: {'$and': [{'Rating': {'$lt': 4.5}}, {'ReviewCount': {'$gt': 200}}, {'Brand': {'$in': ['Nike', 'Sony']}}]}
+

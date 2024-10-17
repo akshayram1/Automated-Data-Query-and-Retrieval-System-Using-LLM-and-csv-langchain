@@ -1,6 +1,4 @@
-# Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain
-# Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain
-# CSV Data Query with LLM
+# Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain# CSV Data Query with LLM
 
 This project provides a Streamlit web application that allows users to upload CSV files, generate MongoDB queries using LLM (Language Learning Model), and save query results. The application uses Google's Gemini API for query generation and MongoDB for data storage.
 
@@ -45,8 +43,7 @@ cd <project-directory>
 2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate   
-On Windows: .\venv\Scripts\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 ```
 
 3. Install required packages:
@@ -71,7 +68,11 @@ CSV_CHUNK_SIZE=1000
 
 ## Running the Application
 
-1. Ensure MongoDB / mongodb compass is running on your local machine:
+You can run the application in two ways:
+
+### 1. Using Streamlit (Web Interface)
+
+1. Ensure MongoDB is running on your local machine:
 ```bash
 mongod
 ```
@@ -83,13 +84,34 @@ streamlit run src/streamlit_app.py
 
 The application will be available at `http://localhost:8501`
 
+### 2. Using Command Line
+
+1. Ensure MongoDB is running on your local machine:
+```bash
+mongod
+```
+
+2. Run the application using Python:
+```bash
+python src/main.py
+```
+
+This will run the application in command-line mode, which is useful for testing or automation purposes.
+
 ## Usage
 
+### Using Streamlit Interface:
 1. Upload a CSV file using the file uploader
 2. Enter your query in natural language in the text input field
 3. The application will generate a MongoDB query based on your input
 4. Click "Execute Query" to run the query and view results
 5. Download the query results as a CSV file using the download button
+
+### Using Command Line Interface:
+1. Place your CSV file in the data directory
+2. Run the application using `python src/main.py`
+3. Follow the command-line prompts to process your data
+4. Results will be saved in the output directory
 
 ## Features
 
@@ -98,13 +120,15 @@ The application will be available at `http://localhost:8501`
 - Automatic database cleanup after each session
 - Query result export to CSV
 - Duplicate removal from query results
-- Interactive data visualization
+- Interactive data visualization (in Streamlit mode)
+- Command-line interface for automated processing
 
 ## Important Notes
 
 - The database is automatically deleted after each processing session for cleanup
 - The application saves all generated queries in `output/queries_generated.txt`
-- Query results are saved in `output/query_results2.csv`
+- Query results are saved in `output/query_results2.csv for streamlit output `
+- Query results are saved in `output/query_results.csv for command line output `
 - Make sure to keep your Gemini API key secure and never commit it to version control
 
 ## Troubleshooting
@@ -123,4 +147,3 @@ The application will be available at `http://localhost:8501`
 
 Feel free to submit issues, fork the repository, and create pull requests for any improvements.
 
-# Automated-Data-Query-and-Retrieval-System-Using-LLM-and-csv-langchain
